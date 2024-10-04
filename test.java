@@ -7,7 +7,11 @@ import java.util.*;
 class Test {
 
     // Main driver method
+
     public static void main(String a[]) {
+
+
+
 
         // Creating the connection using Oracle DB
         String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -17,8 +21,16 @@ class Test {
         String pass = "12345";
 
 
+
         String sql = "select * from employee";
 
+
+ 	//changes from karthick
+ 
+        // Inserting data using SQL query
+        String sql = "insert into student1 values('" + name
+                     + "'," + roll + ",'" + cls + "')";
+ 
 
         Connection con = null;
 
