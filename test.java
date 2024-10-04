@@ -9,7 +9,8 @@ class Test {
     // Main driver method
     public static void main(String a[])
     {
- 
+
+
         // Creating the connection using Oracle DB
         // Note: url syntax is standard, so do grasp
         String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -19,17 +20,7 @@ class Test {
         String user = "system";
         String pass = "12345";
  
-        // Entering the data
-        Scanner k = new Scanner(System.in);
- 
-        System.out.println("enter name");
-        String name = k.next();
- 
-        System.out.println("enter roll no");
-        int roll = k.nextInt();
- 
-        System.out.println("enter class");
-        String cls = k.next();
+ 	//changes from karthick
  
         // Inserting data using SQL query
         String sql = "insert into student1 values('" + name
